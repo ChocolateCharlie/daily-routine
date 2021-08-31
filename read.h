@@ -7,10 +7,12 @@
 #ifndef READ_H_INCLUDED
 #define READ_H_INCLUDED
 
+#include "Link.h"
 #include <fstream>
 #include <string>
+#include <vector>
 
-void readfile();
+std::vector<Link> readfile();
 
 # endif // READ_H_INCLUDED
 
