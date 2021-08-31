@@ -13,8 +13,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	vector<Link> v = readfile();
-
-	for (int i = 0; i < v.size(); i++) { cout << v[i].get_address() << endl; }
+	readlist(v);
 
 	return(0);
 }

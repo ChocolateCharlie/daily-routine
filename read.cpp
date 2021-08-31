@@ -23,3 +23,9 @@ std::vector<Link> readfile() {
 	return(v);
 }
 
+void readlist(std::vector<Link> &list) {
+	for (int i = 0; i < list.size(); i++) {
+		std::cout << list[i].get_address() << std::endl;
+	}
+}
+

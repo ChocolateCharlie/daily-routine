@@ -13,6 +13,7 @@
 #include <vector>
 
 std::vector<Link> readfile();
+void readlist(std::vector<Link> &list);
 
 # endif // READ_H_INCLUDED
 
