@@ -1,31 +1,22 @@
 /* --------------------------------------------------------------------------*/
 /*                                                             DAILY ROUTINE */
-/* main.cpp                                                                  */
+/* interaction.h                                                             */
 /* By: ChocolateCharlie                                                      */
 /* Updated: 2021-09-01                                                       */
 /* ------------------------------------------------------------------------- */
+#ifndef INTERACTION_H_INCLUDED
+#define INTERACTION_H_INCLUDED
+
 #include <iostream>
-#include <vector>
-#include "Link.h"
-#include "interaction.h"
+#include <string>
 #include "read.h"
 
-using namespace std;
+const std::string dr_prompt = "daily-routine: ";
+const std::string greetings_header = "header.txt";
 
-int main(int argc, char *argv[]) {
-	bool keep_running = true;
+void goodbye();
+void greetings();
+// bool menu();
 
-	greetings();
-	while(keep_running) {
-		// keep_running = menu();
-		keep_running = false;
-	}
-	goodbye();
-/*
-	vector<Link> v = re adfile();
-	readlist(v);
-*/
-
-	return(0);
-}
+# endif // INTERACTION_H_INCLUDED
 
