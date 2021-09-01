@@ -2,7 +2,7 @@
 /*                                                             DAILY ROUTINE */
 /* read.cpp                                                                  */
 /* By: ChocolateCharlie                                                      */
-/* Updated: 2021-08-31                                                       */
+/* Updated: 2021-09-01                                                       */
 /* ------------------------------------------------------------------------- */
 #include "read.h"
 
@@ -24,8 +24,15 @@ std::vector<Link> readfile() {
 }
 
 void readlist(std::vector<Link> &list) {
+	std::string ans;
+	std::string command;
 	for (int i = 0; i < list.size(); i++) {
-		std::cout << list[i].get_address() << std::endl;
+		std::cout << "Open " << list[i].get_address() << " ? ";
+		std::cin >> ans;
+		if (ans == "yes") {
+			command = "firefox " + list[i].get_address();
+			system(command.c_str());
+		}
 	}
 }
 
